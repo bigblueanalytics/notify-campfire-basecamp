@@ -31,7 +31,6 @@ export async function runAction() {
   }
 }
 
-// Run the action when the file is being run
-if (require.main === module) {
+if (import.meta.main) {
   runAction();
 }
