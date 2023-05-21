@@ -1,5 +1,5 @@
 name: 'Campfire Notification Action - Basecamp'
-description: 'A GitHub action that enables workflows to send messages directly to a Basecamp-Campfire chat. It leverages Basecamp's bot chat functionality, eliminating the need for OAuth authentication. Ideal for teams looking to enhance their workflow with real-time GitHub updates in their Basecamp-Campfire chats.'
+description: 'A GitHub action that enables workflows to send messages directly to a Basecamp-Campfire chat.'
 inputs:
   account_id:
     description: 'Basecamp account ID'
