@@ -2,11 +2,12 @@
   "name": "notify-campfire-basecamp",
   "version": "1.0.0",
   "description": "A GitHub action that enables workflows to send messages directly to a Basecamp-Campfire chat. It leverages Basecamp's bot chat functionality, eliminating the need for OAuth authentication. Ideal for teams looking to enhance their workflow with real-time GitHub updates in their Basecamp-Campfire chats.",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "build": "ncc build index.js --license LICENSE.txt"
+    "lint": "eslint .",
+    "build": "ncc build index.js --license LICENSE.txt",
+    "test": "jest"
   },
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/bigblueanalytics/notify-campfire-basecamp.git"
@@ -35,6 +36,8 @@
     "axios": "^1.6.7"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.38.1"
+    "@vercel/ncc": "^0.38.1",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0"
   }
 }
